@@ -1,3 +1,6 @@
+#root{
+  background-color: rgb(13,17,23);
+}
 /* Customize the width of the scrollbar */
 ::-webkit-scrollbar {
     width: 10px; /* Adjust the width as per your preference */
@@ -5,23 +8,23 @@
 /* Customize the scrollbar track */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: rgb(244, 149, 149); /* or any color of your choice */
+    background-color: rgb(22,27,34); /* or any color of your choice */
   }
   
   /* Customize the scrollbar thumb */
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: rgb(224, 95, 95); /* or any color of your choice */
+    background-color: rgb(34, 49, 74); /* or any color of your choice */
   }
   
   /* Customize the scrollbar thumb on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(209, 56, 56); /* or any color of your choice */
+    background-color: rgb(34, 49, 74); /* or any color of your choice */
   }
   
   /* Customize the scrollbar thumb when it's grabbed/dragged */
   ::-webkit-scrollbar-thumb:active {
-    background-color: rgb(209, 56, 56); /* or any color of your choice */
+    background-color: rgb(34, 49, 74); /* or any color of your choice */
   }
   
   /* Customize the scrollbar corner */
@@ -40,11 +43,9 @@
     height: 100vh;
 }
 .custom_card{
-    background-color: lightcoral;
     width: 70%;
     padding: 20px;
     border-radius: 10px;
-    filter: drop-shadow(0 10px 10px rgb(172, 172, 172));
 }
 .custom_card div button{
     background-color: green;
@@ -60,22 +61,24 @@
 }
 .todosContainer .todo{
     border-radius: 10px;
-    background-color: lightblue;
-    padding: 20px;
+    background-color: rgb(22,27,34);
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    color: rgb(210, 210, 210);
+}
+.todosContainer .todo p {
+    margin-bottom: 0;
+    width: 100%;
+}
+.todosContainer .todo .finishBtn {
+    margin-right: 10px;
+    cursor: pointer;
 }
 .todosContainer .todo .completed{
     text-decoration: line-through;
 }
-.todosContainer .todo .buttons{
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-    gap: 5px;
-    width: 100px;
-}
+
 .todosContainer .todo .buttons .deleteBtn{
     background-color: red;
 }
@@ -84,7 +87,12 @@
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: 5px;
-    padding: 10px 0;
+    border-radius: 50%;
+    padding: 5px;
+}
+.todosContainer .todo .buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
